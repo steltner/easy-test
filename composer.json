@@ -1,0 +1,34 @@
+{
+    "name": "geste/easy-test",
+    "description": "Testcases for often used mezzio classes",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Georg Steltner",
+            "email": "georg.steltner@gmail.com"
+        }
+    ],
+    "config": {
+        "process-timeout" : 0,
+        "sort-packages": true
+    },
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9",
+        "psr/container": "*",
+        "psr/http-message": "*",
+        "psr/http-server-middleware": "*",
+        "psr/log": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Easy\\Test\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+        }
+    }
+}
